@@ -22,9 +22,6 @@
     "start": "npm build . && jest",
     "test": "jest"
   },
-  "devDependencies": {
-    "jest": "^24.9.0"
-  },
   "dependencies": {
     "nan": "^2.14.0"
   }

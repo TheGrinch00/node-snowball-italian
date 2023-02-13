@@ -45,7 +45,7 @@ porter          UTF_8,ISO_8859_1        porter			english
 # distribution. To compile a libstemmer with them in, add them to this list,
 # and regenerate the distribution. (You will need a full source checkout for
 # this.) They are included in the snowball website as curiosities, but are not
-# intended for general use, and use of them is is not fully supported.  These
+# intended for general use, and use of them is not fully supported.  These
 # algorithms are:
 #
 # german2          - This is a slight modification of the german stemmer.
