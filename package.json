@@ -1,8 +1,8 @@
 {
-  "name": "node-snowball",
+  "name": "node-snowball-italian",
   "version": "0.6.0",
   "license": "MIT",
-  "description": "This module for Node.js provides stemming capability for a variety of languages using Dr. M.F. Porter's Snowball API.",
+  "description": "This a forked module for Node.js provides stemming capability for the italian language using Dr. M.F. Porter's Snowball API.",
   "authors": [
     "Harold Thetiot <hthetiot@gmail.com> (http://melchizetech.com)",
     "Richard Hull <rm_hull@yahoo.co.uk>"
