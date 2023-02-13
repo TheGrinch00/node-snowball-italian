@@ -55,32 +55,7 @@ snowball.stemword(
 
 ### Supported language second argument:
 
- * arabic
- * basque
- * catalan
- * danish
- * dutch
- * english
- * finnish
- * french
- * german
- * greek
- * hindi
- * hungarian
- * indonesian
- * irish
  * italian
- * lithuanian
- * nepali
- * norwegian
- * portuguese
- * spanish
- * swedish
- * romanian
- * russian
- * tamil
- * turkish
- * porter (not a language)
 
 ### Supported encoding third argument:
 
