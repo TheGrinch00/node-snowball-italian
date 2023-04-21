@@ -1,18 +1,10 @@
-**node-snowball**
+**node-snowball-italian**
 
-[![NPM](https://nodei.co/npm/node-snowball.png)](https://npmjs.org/package/node-snowball)
+***This module is built as a fork of the original node-snowball to have a lighter italian-only package for a specific use-case***
 
-[![Build Status](https://travis-ci.org/hthetiot/node-snowball.svg?branch=master)](https://travis-ci.org/hthetiot/node-snowball)
-
-This stemming module for Node.js provides stemming capability for a variety of languages using Dr. M.F. Porter's Snowball API.
+This stemming module for Node.js provides stemming capability for the italian language using Dr. M.F. Porter's Snowball API.
 That allow you to get from a word a reduced, inflected (or sometimes derived) word from the original word stem, base or root.
 
-Examples:
-> A stemmer for English, for example, should identify the string "cats" (and possibly "catlike", "catty" etc.)
-> as based on the root "cat", and "stemmer", "stemming", "stemmed" as based on "stem". A stemming algorithm
-> reduces the words "fishing", "fished", and "fisher" to the root word, "fish". On the other hand, "argue",
-> "argued", "argues", "arguing", and "argus" reduce to the stem "argu" (illustrating the case where the stem
-> is not itself a word or root) but "argument" and "arguments" reduce to the stem "argument".
 
 This library is using bindings to the [libstemmer](http://snowball.tartarus.org/download.html) C library.
 It's support
@@ -23,24 +15,19 @@ More about Stemming:
 
 ## Install
 ```
-npm install node-snowball
+npm install node-snowball-italian
 ```
 
 ## Usage
 
 ```javascript
-var snowball = require('node-snowball');
+var snowball = require('node-snowball-italian');
 
-// Using String
-snowball.stemword('consignment'); // 'consign'
-
-// Using String and a specific language algorithm
-snowball.stemword('consignment', 'english'); // 'consign'
-snowball.stemword('continuation', 'french'); // 'continu'
+// You can only use italian language with this module
+snowball.stemword('richiesta', 'italian'); // 'richiest'
 
 // Or using Array of string
-snowball.stemword(['consignment', 'conspiring'], 'english'); // ['consign', 'conspiri']
-snowball.stemword(['continuation', 'contrainte'], 'french'); // ['continu', 'contrain']
+snowball.stemword(['parola', 'libro'], 'italian'); // ['parol', 'libr']
 ```
 
 ## Quick Doc
@@ -48,7 +35,7 @@ snowball.stemword(['continuation', 'contrainte'], 'french'); // ['continu', 'con
 ``` javascript
 snowball.stemword(
     word || words, // The word or group of words that you need the stemming from
-    language,      // The language (optional, default is "english")
+    language,      // The language (required, the only available is "italian")
     encoding       // The text encoding (optional, default is "UTF-8")
 );
 ```
